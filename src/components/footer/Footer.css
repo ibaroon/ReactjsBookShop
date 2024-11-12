@@ -1,0 +1,103 @@
+.footer{
+    padding : 10px 30px;
+    background-color: var(--primary-color);
+}
+/* footer-social-media*/
+.footer-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.footer-social-media-text{
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-social-media-icons{
+    display: flex;
+    align-items: center;
+
+}
+.footer-social-media-icon{
+    margin: 0 15px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+/* Footer links*/
+.footer-links-wrapper{
+padding: 20px;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+.footer-links-item{
+    width: 30%;
+}
+.footer-links-item-title{
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+    width: max-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.footer-links{
+    padding: 5px;
+}
+
+.footer-link{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.footer-address-item{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--main-color);
+}
+.footer-address-item i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.footer-description{
+    font-size: 17px;
+    color: var(--main-color);
+}
+
+@media(max-width : 820px)
+{
+    .footer-social-media-icon{margin-right: 7px;}
+    .footer-links-wrapper{flex-wrap: wrap;}
+    .footer-links-item{width: 40%;}
+    .footer-links-item:last-of-type{width: 80%;margin-top: 15px;}
+    
+}
+/*tablet*/
+@media(max-width : 720px)
+{
+    .footer-social-media{flex-direction: column;align-items: flex-start;}
+    .footer-social-media-icon{margin: 15px 15px 0 0;}
+    
+}
+/* mobile*/
+@media(max-width : 520px)
+{
+    .footer{padding: 15px;}
+    .footer-links-item{width: 90%;margin-top: 20px;}
+    
+}
